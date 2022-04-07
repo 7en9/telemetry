@@ -44,6 +44,10 @@
   display: block;
 }
 
+.menu-block:hover .menu-arrow {
+  transform: rotate(180deg);
+}
+
 .side-block {
   width: 4px;
   height: 100%;
@@ -204,6 +208,11 @@
   margin-right: 5px;
 }
 
+.pick-txt-link {
+  margin-right: 5px;
+  color: #a0adba;
+}
+
 .interaction {
   display: flex;
   justify-content: space-between;
@@ -256,15 +265,15 @@
   align-items: center;
 }
 
+.add {
+  background: #3dc1d3;
+  color: #fff;
+}
+
 .filter {
   background: #fff;
   margin-right: 16px;
   color: #5f6c79;
-}
-
-.add {
-  background: #3dc1d3;
-  color: #fff;
 }
 
 .mr {
@@ -306,4 +315,331 @@
   color: #39434d;
   font-size: 20px;
   margin-bottom: 16px;
+}
+
+/*---------------MODAL CONTENT----------------------*/
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.modal-input[type="checkbox"] {
+  display: none;
+}
+
+.modal-input[type="checkbox"]:checked ~ .modal-background {
+  display: flex;
+}
+
+.modal-background {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+  z-index: 9998;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal {
+  width: 1250px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0px 4px 16px rgb(48 49 51);
+  padding: 20px;
+}
+
+.modal > p {
+  padding: 15px;
+  margin: 0;
+  color: #78828d;
+}
+
+.modal-header {
+  background-color: #f9f9f9;
+  border-bottom: 1px solid #dddddd;
+  box-sizing: border-box;
+  height: 50px;
+}
+
+.modal-header h3 {
+  margin: 0;
+  box-sizing: border-box;
+  padding-left: 15px;
+  line-height: 50px;
+  color: #78828d;
+  font-size: 16px;
+  display: inline-block;
+}
+
+.modal-header label {
+  box-sizing: border-box;
+  border-left: 1px solid #dddddd;
+  float: right;
+  line-height: 50px;
+  padding: 0 15px 0 15px;
+  cursor: pointer;
+}
+
+.modal-header label:hover img {
+  opacity: 0.6;
+}
+
+/* below is optional, it is just an example for the blue button */
+.example-label {
+  box-sizing: border-box;
+  display: flex;
+  padding: 4px 12px 4px 8px;
+  background: #3dc1d3;
+  color: #fff;
+  font-size: 12px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+}
+
+/*----------------TABLE STYLES---------------------*/
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.main-table-line,
+.table-line {
+  border-bottom: 1px solid #ebeff2;
+}
+
+.main-table-line {
+  font-size: 12px;
+  color: #5f6c79;
+}
+
+.line-input {
+  padding-right: 24px;
+  padding-left: 24px;
+}
+
+.header-table {
+  display: flex;
+  padding-right: 46px;
+  align-items: center;
+}
+
+.table-header-txt {
+  padding-right: 5px;
+}
+
+.status {
+  padding-right: 135px;
+}
+
+.teble-content-left,
+.header-txt-left {
+  text-align: left;
+}
+
+.properties {
+  padding-right: 45px;
+}
+
+.commands {
+  padding-right: 45px;
+}
+
+.measures {
+  padding-right: 64px;
+}
+
+.table-content {
+  text-align: right;
+}
+
+.version {
+  padding-right: 116px;
+}
+
+.display-name {
+  padding: 14px 0;
+}
+
+.display-name-txt {
+  font-size: 13px;
+  color: #3dc1d3;
+}
+
+.display-name-txt-bottom {
+  font-size: 11px;
+  color: #a0adba;
+}
+
+.number {
+  font-size: 13px;
+  text-align: right;
+}
+
+.status-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.status-container-top {
+  display: flex;
+  align-items: center;
+  padding-bottom: 4px;
+}
+
+.status-txt {
+  font-size: 12px;
+  color: #39434d;
+}
+
+.created-item {
+  background: #52c41a;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 6px;
+}
+
+.red {
+  background: #ff344c;
+}
+
+.blue {
+  background: #1890ff;
+}
+
+.tag-container {
+  display: flex;
+  align-items: center;
+}
+
+.table-tag {
+  display: flex;
+  color: #5f6c79;
+  background: #ebeff2;
+  border-radius: 12px;
+  font-size: 12px;
+  align-items: center;
+  padding: 2px 8px;
+}
+
+.draft {
+  width: 45px;
+}
+
+.tag-space {
+  margin-right: 5px;
+}
+
+/*-------------------------------------*/
+.container {
+  display: block;
+  cursor: pointer;
+}
+
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  display: block;
+  height: 14px;
+  width: 14px;
+  background: #fff;
+  border: 1px solid #c3cad2;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 2px;
+}
+
+.container input:checked ~ .checkmark {
+  background-color: #3dc1d3;
+  border: none;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+  display: block;
+  border: none;
+}
+
+.top-checkmark {
+  margin-bottom: 8px;
+}
+/*-------------------------------------*/
+
+.bottom__container {
+  display: flex;
+  padding: 16px 24px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bottom-select {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bottom-select-txt {
+  font-size: 12px;
+  color: #39434d;
+}
+
+.mr-6,
+.number-select {
+  margin-right: 6px;
+  cursor: pointer;
+}
+
+.number-select {
+  border: 1px solid #d8dde3;
+  border-radius: 4px;
+  outline: none;
+}
+
+.bottom__right,
+.bottom__right-number,
+.bottom__right-frame,
+.frame-number,
+.select-img-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.select-img-right {
+  cursor: pointer;
+}
+
+.bottom__right-number {
+  margin-right: 24px;
+  color: #8896a4;
+  font-size: 11px;
+}
+
+.frame-number {
+  font-size: 12px;
+  color: #a0adba;
+}
+
+.dark-number {
+  color: #39434d;
 }

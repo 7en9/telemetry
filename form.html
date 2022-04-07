@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style-form.css">
+  <title>telemetry</title>
+</head>
+
+<body>
+  <div class="main">
+    <div class="container__left">
+      <div class="logo">
+        <img src="img/g12.png" />
+        <img class="exit" src="img/img.png" />
+      </div>
+
+      <div class="menu-block">
+        <div class="side-block"></div>
+        <img class="menu-img" src="img/menu-item5.png" />
+        <p class="menu-block-txt">Dashboards</p>
+        <img class="menu-arrow" src="img/arrow-up.png" />
+      </div>
+
+      <div class="menu-block">
+        <div class="side-block"></div>
+        <img class="menu-img" src="img/menu-item4.png" />
+        <p class="menu-block-txt">Monitor</p>
+        <img class="menu-arrow" src="img/arrow-down.png" />
+      </div>
+
+      <ul class="container__left-form">
+        <li class="form-list">Thing Details</li>
+        <li class="form-list">Events</li>
+        <li class="form-list">Telemetry</li>
+      </ul>
+
+      <div class="menu-block">
+        <div class="side-block"></div>
+        <img class="menu-img" src="img/menu-item3.png" />
+        <p class="menu-block-txt">Manage</p>
+        <img class="menu-arrow" src="img/arrow-down.png" />
+      </div>
+
+      <ul class="container__left-form">
+        <li class="form-list">Rules</li>
+        <li class="form-list">Jobs</li>
+        <li class="form-list">Destinations</li>
+      </ul>
+
+      <div class="menu-block">
+        <div class="side-block"></div>
+        <img class="menu-img" src="img/menu-item1.png" />
+        <p class="menu-block-txt">Onboarding</p>
+        <img class="menu-arrow" src="img/arrow-down.png" />
+      </div>
+
+      <ul class="container__left-form">
+        <li class="form-list">Things</li>
+        <li class="form-list">Thing Types</li>
+      </ul>
+
+      <div class="menu-block">
+        <div class="side-block"></div>
+        <img class="menu-img" src="img/menu-item2.png" />
+        <p class="menu-block-txt">Administration</p>
+        <img class="menu-arrow" src="img/arrow-down.png" />
+      </div>
+
+      <ul class="container__left-form">
+        <li class="form-list">Users</li>
+        <li class="form-list">Groups</li>
+        <li class="form-list">Roles</li>
+        <li class="form-list">Invitations</li>
+        <li class="form-list">Tenant Settings</li>
+      </ul>
+    </div>
+
+    <div class="container__right">
+      <div class="special-padding">
+        <div class="top-bar">
+          <div class="top-bar-input">
+            <img class="loupe" src="img/loupe.png" alt="error" />
+            <input class="search" type="text" placeholder="Search for things, functions or information" />
+          </div>
+
+          <div class="top-bar-right">
+            <div class="bell">
+              <div class="notifications">You have 3 new messages</div>
+              <img src="img/bell.png" alt="error" />
+              <div class="bell-mark">3</div>
+            </div>
+
+            <div class="language">
+              <select class="language-select">
+                <option>EN</option>
+                <option selected>DE</option>
+              </select>
+            </div>
+
+            <div class="top-bar-txt">
+              <p class="personal">Max Mustermann</p>
+              <p class="company-info">Company GmbH</p>
+            </div>
+
+            <div class="top-bar-round">MM</div>
+          </div>
+        </div>
+
+        <div class="pick">
+          <a class="pick-txt-link" href="index.html">Onboarding</a>
+          <p class="pick-txt">/</p>
+          <p>Things</p>
+        </div>
+
+        <div class="interaction">
+          <p class="interaction-things">Things</p>
+          <div class="buttons">
+            <button class="button import">
+              <img class="button-img" src="img/import.png" alt="" />
+              <p>Import</p>
+            </button>
+            
+            <button class="button delete">
+              <img class="button-img" src="img/delete.png" alt="" />
+              <p>Delete</p>
+            </button>
+          </div>
+        </div>
+
+        <div class="interaction">
+          <div class="interaction-bottom">
+            <button class="button add mr">
+              <img class="button-img" src="img/add.png" alt="" />
+              <p>New</p>
+            </button>
+
+            <button class="button filter">
+              <img class="button-img" src="img/filter.png" alt="" />
+              <p>Filter</p>
+            </button>
+            <div class="input">
+              <img src="img/loupe.png" alt="" />
+              <input class="interaction-input" type="text" placeholder="Search things" />
+            </div>
+          </div>
+          <p class="interaction-txt">10 of 200</p>
+        </div>
+      </div>
+
+      <table class="table">
+        <tbody class="table-body">
+          <tr class="main-table-line">
+            <td class="line-input">
+              <label class="container">
+                <input type="checkbox">
+                <span class="checkmark top-checkmark"><img class="checkbox-img" src="img/checkbox.png" alt=""></span>
+              </label>
+            </td>
+            <td class="table-content-left header-table">
+              <p class="table-header-txt">Thing type Name</p>
+              <img src="img/table-header.png" alt="">
+            </td>
+            <td class="table-content version">Version</td>
+            <td class="table-content-left status header-txt-left">Status</td>
+            <td class="table-content properties">Properties</td>
+            <td class="table-content commands">Commands</td>
+            <td class="table-content measures">Measures</td>
+            <td class="table-content-left header-txt-left">Search Tags</td>
+          </tr>
+          <tr class="table-line">
+            <td class="line-input">
+              <label class="container">
+                <input type="checkbox">
+                <span class="checkmark"><img class="checkbox-img" src="img/checkbox.png" alt=""></span>
+              </label>
+            </td>
+            <td class="table-content-left  display-name">
+              <p class="display-name-txt">Display name</p>
+              <p class="display-name-txt-bottom">Name</p>
+            </td>
+            <td class="table-content version number">1</td>
+            <td class="table-content-left">
+              <div class="status-container">
+                <div class="status-container-top">
+                  <div class="created-item"></div>
+                  <p class="status-txt">Created</p>
+                </div>
+                <div class="table-tag draft">Draft</div>
+              </div>
+
+            </td>
+            <td class="table-content number properties">7</td>
+            <td class="table-content number commands">1</td>
+            <td class="table-content number measures">14</td>
+            <td class="table-content-left">
+              <div class="tag-container">
+                <div class="table-tag tag-space">SearchTag</div>
+                <div class="table-tag">SearchTag2</div>
+              </div>
+            </td>
+          </tr>
+          <tr class="table-line">
+            <td class="line-input">
+              <label class="container">
+                <input type="checkbox">
+                <span class="checkmark"><img class="checkbox-img" src="img/checkbox.png" alt=""></span>
+              </label>
+            </td>
+            <td class="table-content-left  display-name">
+              <p class="display-name-txt">Display name</p>
+              <p class="display-name-txt-bottom">Name</p>
+            </td>
+            <td class="table-content version number">2</td>
+            <td class="table-content-left">
+              <div class="status-container-top">
+                <div class="created-item"></div>
+                <p class="status-txt">Created</p>
+              </div>
+            </td>
+            <td class="table-content number properties">12</td>
+            <td class="table-content number commands">3</td>
+            <td class="table-content number measures">345</td>
+            <td class="table-content-left">
+              <div class="tag-container">
+                <div class="table-tag tag-space">SearchTag</div>
+                <div class="table-tag">Tag2</div>
+              </div>
+            </td>
+          </tr>
+          <tr class="table-line">
+            <td class="line-input">
+              <label class="container">
+                <input type="checkbox">
+                <span class="checkmark"><img class="checkbox-img" src="img/checkbox.png" alt=""></span>
+              </label>
+            </td>
+            <td class="table-content-left  display-name">
+              <p class="display-name-txt">Display name</p>
+              <p class="display-name-txt-bottom">Name</p>
+            </td>
+            <td class="table-content version number">2</td>
+            <td class="table-content-left">
+              <div class="status-container-top">
+                <div class="created-item"></div>
+                <p class="status-txt">Created</p>
+              </div>
+            </td>
+            <td class="table-content number properties">3</td>
+            <td class="table-content number commands">2</td>
+            <td class="table-content number measures">7</td>
+            <td class="table-content-left">
+              <div class="tag-container">
+                <div class="table-tag tag-space">SearchTag</div>
+              </div>
+            </td>
+          </tr>
+          <tr class="table-line">
+            <td class="line-input">
+              <label class="container">
+                <input type="checkbox">
+                <span class="checkmark"><img class="checkbox-img" src="img/checkbox.png" alt=""></span>
+              </label>
+            </td>
+            <td class="table-content-left  display-name">
+              <p class="display-name-txt">Display name</p>
+              <p class="display-name-txt-bottom">Name</p>
+            </td>
+            <td class="table-content version number">1</td>
+            <td class="table-content-left">
+              <div class="status-container-top">
+                <div class="created-item red"></div>
+                <p class="status-txt">Failed</p>
+              </div>
+            </td>
+            <td class="table-content number properties">4</td>
+            <td class="table-content number commands">5</td>
+            <td class="table-content number measures">18</td>
+            <td class="table-content-left">
+              <div class="tag-container">
+                <div class="table-tag tag-space">Very long SearchTag</div>
+                <div class="table-tag">Tag</div>
+              </div>
+            </td>
+          </tr>
+          <tr class="table-line">
+            <td class="line-input">
+              <label class="container">
+                <input type="checkbox">
+                <span class="checkmark"><img class="checkbox-img" src="img/checkbox.png" alt=""></span>
+              </label>
+            </td>
+            <td class="table-content-left  display-name">
+              <p class="display-name-txt">Display name</p>
+              <p class="display-name-txt-bottom">Name</p>
+            </td>
+            <td class="table-content version number">2</td>
+            <td class="table-content-left">
+              <div class="status-container-top">
+                <div class="created-item"></div>
+                <p class="status-txt">Created</p>
+              </div>
+            </td>
+            <td class="table-content number properties">5</td>
+            <td class="table-content number commands">12</td>
+            <td class="table-content number measures">4</td>
+            <td class="table-content-left">
+              <div class="tag-container">
+                <div class="table-tag tag-space">SearchTag</div>
+                <div class="table-tag">Tag2</div>
+              </div>
+            </td>
+          </tr>
+          <tr class="table-line">
+            <td class="line-input">
+              <label class="container">
+                <input type="checkbox">
+                <span class="checkmark"><img class="checkbox-img" src="img/checkbox.png" alt=""></span>
+              </label>
+            </td>
+            <td class="table-content-left  display-name">
+              <p class="display-name-txt">Display name</p>
+              <p class="display-name-txt-bottom">Name</p>
+            </td>
+            <td class="table-content version number">1</td>
+            <td class="table-content-left">
+              <div class="status-container-top">
+                <div class="created-item blue"></div>
+                <p class="status-txt">Created in Provider </p>
+              </div>
+            </td>
+            <td class="table-content number properties">1</td>
+            <td class="table-content number commands">2</td>
+            <td class="table-content number measures">1</td>
+            <td class="table-content-left">
+              <div class="tag-container">
+                <div class="table-tag tag-space">Tag</div>
+                <div class="table-tag">Tag2</div>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="bottom__container">
+        <div class="bottom-select">
+          <p class="bottom-select-txt mr-6">Show</p>
+          <select class="number-select">
+            <option selected>6</option>
+            <option>5</option>
+            <option>4</option>
+            <option>3</option>
+            <option>2</option>
+            <option>1</option>
+          </select>
+          <p class="bottom-select-txt">per page</p>
+        </div>
+        <div class="bottom__right">
+          <div class="bottom__right-number">6 of 30</div>
+          <div class="bottom__right-frame">
+            <img class="mr-6" src="img/select-arrow-light.png" alt="">
+            <div class="frame-number">
+              <p class="mr-6 dark-number">1</p>
+              <p class="mr-6">2</p>
+              <p class="mr-6">3</p>
+              <p class="mr-6">4</p>
+              <p class="mr-6">5</p>
+            </div>
+            <div class="select-img-right">
+              <img src="img/arrow-right-dark.png" alt="">
+              <img src="img/double-arrow.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+</body>
+
+</html>
